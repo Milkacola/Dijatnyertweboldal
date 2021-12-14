@@ -1,86 +1,81 @@
-@charset "UTF-8";
-main, header, footer, article, nav, div, h3, p {
-    box-sizing: border-box;
-}
-body {
-    align-content: center;
+body{
     margin: 0px;
-}
-main {
-    font-family: Arial, Verdana, sans-serif;
-    font-size: 10pt;
-    color: beige;
-    margin: auto;
-    width: 90%;
-    max-width: 1000px;
-    display: grid;
-    grid-template-areas:" h h"
-                        " n n" 
-                        " a a"
-                        " f f";
-}
-header {
-    grid-area: h;
-    max-height: 300px;
-    background-size: cover;
-}
-nav {
-    grid-area: n;
-}
-article {
-    grid-area: a;
-    text-align: justify;
-    font-size: 10px;
-    background-color: wheat ;
-    color: black;
-}
-h1 {
-    font-size: 15px;
-}
-footer {
-    grid-area: f;
-    background-color: orange;
-    text-align: center;
-    color: black;
-}
-.felsorolas img {
-    width: 25%;
-    padding: 5px;
-    max-height: 400px;
-    float: right;
-}
-nav {
-    background-color: gray;
-}
-nav a{
-    font-weight: bold;
+    background-color: black;
     color: white;
 }
-nav ul {
-    list-style-type: none;
+
+header{
+    text-align: center;
+}
+
+header a img{
+    width: 90px;
+    margin:5px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    padding:5px;
+    text-decoration: none;   
+}
+
+nav ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
 }
-nav li {
-    background: gray;
-    padding: 3px;
-    margin: 3px;
+
+nav ul li{
+    list-style-type: none;
 }
-nav li:hover {
-    background: orange;
+
+footer{
+    text-align: center;
+    color:gray;
 }
-ul {
-    list-style-type: square;
+
+footer a:hover{
+    color: white;
 }
-.fotarolo {
-    padding: 5px;
+
+footer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin: auto;
+    font-size: 10px;
+    padding: 0px;
+
 }
-@media screen and (max-width: 700px){
-    main {
-        grid-template-areas:" h"
-                            " n"
-                            " a "
-                            " as"
-                            " f";
-    }
+footer ul li{
+    
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+}
+
+#vilagoskek{
+    background-color: rgb(168,218,216);
+    height: 30px;
+}
+
+#sotetkek{
+    background-color: rgb(27,165,162);
+    height: 12px;
+}
+
+#fekete{
+    height: 42px;
+}
+
+.aktualis {
+    border: 2px solid white;
+    border-radius: 15px;
 }
